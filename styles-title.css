@@ -1,0 +1,53 @@
+#container {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      }
+h1 {
+  font-family: covered by your grace;
+  font-style: regular;
+  float: left;
+  position: absolute;
+  left: 60px;
+  top: auto;
+  font-size: 60px;
+  color: #171a1a;
+  text-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+  }
+
+#buttone {
+  width: 170px;
+  height: 70px;
+  background-color: #f7f7f7;
+  box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+  border-radius: 15px;
+  border: none;
+  float: right;
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  font-family: lato;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  color: #171a1a;
+  text-shadow: 1px 1px 3px rgba(18,249,180, 0.95);
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+         width: 50%;
+      }
+    img {
+         width: 90%;
+           }
+}
