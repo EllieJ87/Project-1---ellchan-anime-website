@@ -1,53 +1,76 @@
 #container {
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
+    max-width:100%;
+    background-image: url('images/levi-1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
     }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-      }
 h1 {
   font-family: covered by your grace;
   font-style: regular;
-  float: left;
-  position: absolute;
-  left: 60px;
-  top: auto;
-  font-size: 60px;
+  left: 20px;
+  top: 20px;
+  position: relative;
+  font-size: 45px;
   color: #171a1a;
   text-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
   }
 
-#buttone {
-  width: 170px;
-  height: 70px;
-  background-color: #f7f7f7;
-  box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
-  border-radius: 15px;
-  border: none;
-  float: right;
-  position: absolute;
-  right: 100px;
-  bottom: 50px;
-  font-family: lato;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 30px;
-  color: #171a1a;
-  text-shadow: 1px 1px 3px rgba(18,249,180, 0.95);
-}
+  .enter {
+    width: 130px;
+    height: 60px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+    color: #171a1a;
+    text-shadow: 1px 1px 3px rgba(18,249,180, 0.95);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    position: absolute;
+    float: right;
+    right: 20px;
+    bottom: 20px;
+    font-family: lato;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .enter:hover {
+    box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+    cursor: pointer;
+  }
 
 @media screen and (max-width: 768px) {
     #container {
-         width: 50%;
-      }
-    img {
          width: 90%;
-           }
+         left: auto;
+         top: auto;
+         position: absolute;
+      }
+
+    h1 {
+      font-size: 1.7em;
+      left: auto;
+      top: auto;
+      float: left;
+      position: absolute;
+    }
+    .enter {
+      position: absolute;
+      font-size: 1.7em;
+      width: auto;
+      height: auto;
+      }
 }

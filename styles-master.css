@@ -1,3 +1,16 @@
+body {
+ margin: 0;
+ font-family: lato;
+ color: #171a1a;
+}
+
+#wrapper {
+    max-width: 1280px;
+    height: inherit;
+    margin: auto;
+    position: relative;
+    }
+
 #banner {
     margin: auto;
     }
@@ -6,65 +19,70 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-      }
-h1 {
+    }
+
+.header {
   font-family: covered by your grace;
   font-style: regular;
-  left: 70px;
-  top: 100px;
+  margin: 0;
+  padding: 4px 14px;
   font-size: 50px;
   color: #171a1a;
   text-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
   }
 
-#sidenav {
-    width: 250px;
-    position: relative;
-    display: block;
-  }
-
-a:link {
-  text-decoration: none;
-  font-family: lato;
-  font-style: italic;
-  font-size: 30px;
-  text-align: left;
-  line-height: 50px;
-  color: rgba(23,26,26,0.75);
-  text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
-}
-
-a:visited {
-  text-decoration: none;
-  color: rgba(23,26,26,0.75);
-  text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-
-li {
-  list-style: none;
-}
-
-.nav1 {
-    display: block;
+  ul.sidenav {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 20px;
-    height: 50px;
-    position: relative;
-    background-color: #f7f7f7;
-    border-radius: 7px;
-    border: 1px solid black;
+    width: 14%;
+    position: fixed;
+    height: auto;
+    overflow: auto;
   }
 
+  ul.sidenav li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: lato;
+    font-style: italic;
+    font-size: 30px;
+    text-align: left;
+    line-height: 50px;
+    color: rgba(23,26,26,0.75);
+    text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
+    border-radius: 7px;
+    transition-duration: 0.4s;
+    display: block;
+  }
+
+  ul.sidenav li a:hover:not(.active) {
+    background-color: rgba(18,249,180,0.1);
+    color: #f7f7f7;
+    text-shadow: 1px 1px 3px rgba(23,26,26,0.95);
+  }
+
+  div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: auto;
+  }
+
+h2 {
+  font-family: lato;
+  font-style: italic;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(0,255,178, 0.6);
+  text-shadow: 1px 1px 2px rgba(23,26,26, 0.6);
+  margin: 5px;
+  padding: 2px;
+}
+
 #footer {
+  max-width: 1280px;
+  background-color: none;
   font-family: lato;
   font-weight: bold;
   font-style: italic;
@@ -76,4 +94,61 @@ li {
   line-height: 50px;
   color: rgba(23,26,26,0.75);
   text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
+  }
+
+#svg {
+  transform: translate(0px,0);
+  float: left;
+  margin: 2px 2px;
+  padding: 20px 20px;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linkedin {
+  transform: translate(0px,0);
+  float: left;
+}
+
+.instagram {
+  transform: translate(10px,0);
+  float: left;
+}
+
+.email {
+  transform: translate(10px,0);
+  float: left;
+}
+
+.twitter {
+  transform: translate(10px,0);
+  float: left;
+}
+
+.facebook {
+  transform: translate(10px,0);
+  float: left;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
 }
