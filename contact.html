@@ -28,7 +28,7 @@
 
       <ul class="nav flex-xl-column">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="home.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
@@ -46,32 +46,52 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-    </div><!-- col-xl-2 -->
+    </div>
   
-
     <div class="col-xl-10">
-      <h2>Welcome!</h2>
-      <p>Welcome to my personal portfolio! A collection of hand drawn, and digital drawings done straight from the heart, which I hope you enjoy ^_^.</p>
+      <h2>Contact</h2>
 
-      <p>Most artwork is inspired for my love of Japanese Anime and Manga illustrations, Pokémon and Gaming.  I would also love to share my collection of geometric shape illustrations, which was my initial drawing style as I simply love the simplest ways of line drawing.</p>
+      <div class="container mt-3">
+        <form>
 
-      <p>Black and White is a strong theme throughout all my works, I am currently working on some new water colour bases with bold and finer lines.  I much looking forward to sharing these works with you in the future!</p>
+          <div class="form-group row">
+            <label for="inputfname" class="col-md-3 col-form-label">First Name</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="inputfname" placeholder="Your first name...">
+            </div>
+          </div>
 
-      <p>If my art style either inspires you or you would love to have a bespoke piece done for you then please contact me via the contact page! I much looking forward to hearing for you, of course any comments you wish to share with me (good or bad) I will be happy to hear from you!</p>
+          <div class="form-group row">
+            <label for="inputlname" class="col-md-3 col-form-label">Last Name</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="inputlname" placeholder="Your last name...">
+            </div>
+          </div>
 
-      <h3>UPCOMING WORKS</h3>
-      <ul class="work-list">
-        <li><i class="fa fa-heart-o" aria-hidden="true"></i> Tanjiro (Kimetsu no Yaiba)</li>
-        <li><i class="fa fa-heart-o" aria-hidden="true"></i> Hinata (Haikyu) </li>
-        <li><i class="fa fa-heart-o" aria-hidden="true"></i> Ed (Fullmetal Alchemist)</li>
-        <li><i class="fa fa-heart-o" aria-hidden="true"></i> Mafuyu (Given)</li>
-        <li><i class="fa fa-heart-o" aria-hidden="true"></i> Vivi (Final Fantast IX)</li>
-        <li><i class="fa fa-heart-o" aria-hidden="true"></i> Bakugou (Boku no Hero Academia)</li>
-      </ul>
-      <p><em>Please feel free to check out my dedicated Portfolio page to see my current works!.</em></p>
+          <div class="form-group row">
+            <label for="inputEmail" class="col-md-3 col-form-label">Email</label>
+            <div class="col-md-9">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Your email...">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="textarea" class="col-md-3 col-form-label">Your Thoughts</label>
+            <div class="col-md-9">
+              <textarea type="text" class="form-control" id="textarea" placeholder="Tell me your thoughts..." style="height:200px"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-md-9">
+              <button type="submit" class="btn">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div><!-- container mt-3 -->
 
     </div><!--col-xl-10 -->
 
@@ -98,6 +118,7 @@
       <div class="col-xl" id="footer">All work copyright @2021   | Ellie Judge  | all rights reserved</div>
     </div>
   </div><!-- Closed container p-2 div -->
+
 
 </body>
 </html>
