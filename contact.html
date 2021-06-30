@@ -6,102 +6,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="styles-master.css"/>
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Covered By Your Grace' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles-master.css"/>
 </head>
 <body>
 
   <div class="container p-2">
-    <!-- Banner Image -->
-    <img class="mx-auto d-block img-fluid" src="images/banner.jpg" alt="banner" width="1056" height="276">
-    <!-- Title -->
-    <div class="text"><h1>Ellchan_Anime</h1></div>
 
- <!-- Nav Bar -->
-  <div class="row">
-    <div class="col-xl-2">
+    <header>
 
-      <ul class="nav flex-xl-column">
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
+      <!-- Banner Image -->
+      <img class="mx-auto d-block img-fluid banner" src="images/banner.jpg" alt="banner" width="1056" height="276">
 
-        <!-- DropDown -->
-        <li class="nav-item dropdown dropright">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Portfolio</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Anime</a>
-            <a class="dropdown-item" href="#">Games</a>
-            <a class="dropdown-item" href="#">Pokemon</a>
-            <a class="dropdown-item" href="#">Other</a>
+      <!-- Title -->
+      <div class="text"><h1>Ellchan_Anime</h1></div>
+
+      <div class="row">
+      <div class="col col-lg-3 nav-display">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-md">
+          <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <!-- DropDown -->
+              <li class="nav-item dropdown dropright">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button">Portfolio<i class="fa fa-chevron-right toggle" aria-hidden="true"></i></a>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="anime.html">Anime</a>
+                  <a class="dropdown-item" href="games.html">Games</a>
+                  <a class="dropdown-item" href="pokemon.html">Pokemon</a>
+                  <a class="dropdown-item" href="animals.html">Animals</a>
+                  <a class="dropdown-item" href="other.html">Other</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
-        </li>
+        </nav>
+      </div>
+    </header>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-xl-10">
-      <h2>Contact</h2>
+    <div class="col offset-lg-3 col-lg-9">
+      <div class="col-xl-9 main">
+        <h2>Contact</h2>
 
-      <div class="container mt-3">
-        <form>
+        <div class="container mt-3">
+          <form action="https://formspree.io/f/mayabbjq" method="POST">
 
-          <div class="form-group row">
-            <label for="inputfname" class="col-md-3 col-form-label">First Name</label>
-            <div class="col-md-9">
-              <input type="text" class="form-control" id="inputfname" placeholder="Your first name...">
+            <div class="form-group row">
+              <label for="inputfname" class="col-md-3 col-form-label">First Name</label>
+              <div class="col-md-9">
+                <input type="text" name="fname" class="form-control" id="inputfname" placeholder="Your first name..." autofocus>
+              </div>
             </div>
-          </div>
 
-          <div class="form-group row">
-            <label for="inputlname" class="col-md-3 col-form-label">Last Name</label>
-            <div class="col-md-9">
-              <input type="text" class="form-control" id="inputlname" placeholder="Your last name...">
+            <div class="form-group row">
+              <label for="inputlname" class="col-md-3 col-form-label">Last Name</label>
+              <div class="col-md-9">
+                <input type="text" name="lname" class="form-control" id="inputlname" placeholder="Your last name...">
+              </div>
             </div>
-          </div>
 
-          <div class="form-group row">
-            <label for="inputEmail" class="col-md-3 col-form-label">Email</label>
-            <div class="col-md-9">
-              <input type="email" class="form-control" id="inputEmail" placeholder="Your email...">
+            <div class="form-group row">
+              <label for="inputEmail" class="col-md-3 col-form-label">Email</label>
+              <div class="col-md-9">
+                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Your email...">
+              </div>
             </div>
-          </div>
 
-          <div class="form-group row">
-            <label for="textarea" class="col-md-3 col-form-label">Your Thoughts</label>
-            <div class="col-md-9">
-              <textarea type="text" class="form-control" id="textarea" placeholder="Tell me your thoughts..." style="height:200px"></textarea>
+            <div class="form-group row">
+              <label for="textarea" class="col-md-3 col-form-label">Your Thoughts</label>
+              <div class="col-md-9">
+                <textarea type="text" name="message" class="form-control" id="textarea" placeholder="Tell me your thoughts..." style="height:200px"></textarea>
+              </div>
             </div>
-          </div>
 
-          <div class="form-group row">
-            <div class="col-md-9">
-              <button type="submit" class="btn">Submit</button>
+            <div class="form-group row">
+              <div class="col-md-9">
+                <button type="submit" class="btn">Submit</button>
+              </div>
             </div>
-          </div>
-        </form>
-      </div><!-- container mt-3 -->
+          </form>
 
-    </div><!--col-xl-10 -->
-
-  </div><!-- row -->
-
-</div> <!-- Closed container div -->
+        </div><!--col-xl-10 -->
+      </div><!-- col offset-lg-2 col-lg-10 -->
+    </div><!-- row -->
+  </div><!-- Closed container div -->
 
   <div class="container p-2">
     <div class="row" id="links">
-      <div class="col-xl d-flex" id="socialMediaLinks">
+      <div class="col-12 col-lg-6 d-flex" id="socialMediaLinks">
 
         <div class="p-2"><a href="https://www.linkedin.com/in/ellie-judge-45b00689/" class="fa fa-linkedin-square" aria-hidden="true"></a></div>
 
@@ -115,10 +125,12 @@
         <div class="p-2"><a href="https://www.facebook.com/Lobo.Luna.87/" class="fa fa-facebook" aria-hidden="true"></a></div>
         </div>
 
-      <div class="col-xl" id="footer">All work copyright @2021   | Ellie Judge  | all rights reserved</div>
+      <div class="col-12 col-lg-6" id="footer">All work copyright @2021   | Ellie Judge  | all rights reserved</div>
     </div>
   </div><!-- Closed container p-2 div -->
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
