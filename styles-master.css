@@ -13,6 +13,7 @@ header {
 }
 
 img {
+  display: none;
   background-color: white;
 }
 
@@ -317,5 +318,15 @@ transition-duration: 0.4s;
           .main {
             margin-top: 50%;
             }
-
       }
+
+/* Portrait tablet to landscape and desktop */
+@media (max-width:540px) {
+  img.banner {
+    display: none !important;
+  }
+
+  .main {
+    margin-top: 15%;
+    }
+}
