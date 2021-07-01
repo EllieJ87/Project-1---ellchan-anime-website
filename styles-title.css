@@ -1,4 +1,5 @@
-margin: 0;
+body {
+  margin: 0;
 }
 
 .container {
@@ -54,12 +55,14 @@ button {
     font-style: italic;
     font-weight: bold;
     -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+       transition-duration: 0.4s;
   }
 
 /* button on hover */
   .enter:hover {
-    box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+    -webkit-box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+            box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
     cursor: pointer;
   }
 

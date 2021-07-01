@@ -5,9 +5,16 @@ body {
 /* Home page */
 /* ellchan_anime title styling and position */
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
   z-index: 1;
 }
@@ -34,13 +41,20 @@ img {
 .nav-btn i {
   color: rgba(23,26,26,0.75);
   text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   background-color: white;
 }
 
 .navbar-nav {
-  flex: display;
-  flex-direction: column !important;
+  -webkit-box-flex: display;
+      -ms-flex: display;
+          flex: display;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
   background-color: white;
 }
 
@@ -53,7 +67,9 @@ img {
   font-size: 20px;
   color: rgba(23,26,26,0.75);
   text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   background-color: white;
 }
 
@@ -66,7 +82,9 @@ img {
   font-size: 15px;
   color: rgba(23,26,26,0.75);
   text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   }
 
 /* nav text styling & shadow on hover */
@@ -81,7 +99,9 @@ img {
 .toggle {
   color: rgba(23,26,26,0.75);
   text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   font-size: 15px;
   padding-left: 10px;
   }
@@ -90,9 +110,16 @@ img {
 /* Welcome title styling and posistion */
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 325px;
 
   }
@@ -148,7 +175,8 @@ text-shadow: 2px 2px 14px rgba(18,249,180,0.1);
 .form-control {
 font-family: lato;
 font-style: italic;
-box-shadow: 2px 2px 5px rgba(0,255,178, 0.6);
+-webkit-box-shadow: 2px 2px 5px rgba(0,255,178, 0.6);
+        box-shadow: 2px 2px 5px rgba(0,255,178, 0.6);
 border: 1px solid #ccc;
 border-radius: 10px;
 height: 50px;
@@ -171,12 +199,14 @@ font-family: lato;
 font-style: italic;
 font-weight: bold;
 -webkit-transition-duration: 0.4s; /* Safari */
-transition-duration: 0.4s;
+-o-transition-duration: 0.4s;
+   transition-duration: 0.4s;
 }
 
 /* Submit button styling on hover */
 .btn:hover {
-  box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+  -webkit-box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+          box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
   cursor: pointer;
 }
 
@@ -188,7 +218,8 @@ transition-duration: 0.4s;
 }
 
 .image:hover {
-    box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+    -webkit-box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+            box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
     border-radius: 5px;
 }
 
@@ -250,9 +281,14 @@ transition-duration: 0.4s;
 /* social media links */
 #links {
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   }
 
 /* social media links as they stand */
@@ -267,7 +303,9 @@ transition-duration: 0.4s;
 /* social media links when on hover */
 #socialMediaLinks a:hover {
     color: #00ffb2;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
   }
 
 /* footer styling and position */
@@ -281,7 +319,8 @@ transition-duration: 0.4s;
   text-align: right;
   color: rgba(23,26,26,0.75);
   text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   }
 
 
@@ -289,8 +328,13 @@ transition-duration: 0.4s;
   @media screen and (max-width: 960px) {
 
       .navbar-nav {
-        flex-direction: row !important;
-        justify-content: space-evenly;
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: row !important;
+                flex-direction: row !important;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         text-align: center;
       }
 
@@ -299,8 +343,11 @@ transition-duration: 0.4s;
           }
 
         #socialMediaLinks {
-          flex-wrap: wrap;
-          justify-content: space-evenly;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-pack: space-evenly;
+              -ms-flex-pack: space-evenly;
+                  justify-content: space-evenly;
         }
 
         #footer {
@@ -312,9 +359,15 @@ transition-duration: 0.4s;
 @media screen and (max-width: 720px) {
 
         .navbar-nav {
-          flex-direction: row !important;
-          justify-content: space-between;
-          flex-wrap: wrap;
+          -webkit-box-orient: horizontal !important;
+          -webkit-box-direction: normal !important;
+              -ms-flex-direction: row !important;
+                  flex-direction: row !important;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
           }
 
           .main {
