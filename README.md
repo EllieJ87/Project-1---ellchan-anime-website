@@ -3,6 +3,8 @@ Ellchan_Anime Website - Milestone Project One
 This is a website that I created for my personal sketching and drawing works. My website will be used by existing, new, and inspiring artists wanting to find more information about my work.  Each page contains links to my personal sites where they can find more information or follow me on social media sites for up-to-date content.
 Users can use my website to contact me directly via the email icon or the contact form to discuss works currently on the site or any collaborations they wish to work with me on.
 
+![GitHub Logo](/screens/title-response.jpg)
+
 UX
 
 My website is for current and potential anime, gaming or drawing fans, who are looking to gain more content and a full library of my work.  My website provides a full overhaul of varied works over the past years, along with this links to my social media sites where they can follow me directly.
