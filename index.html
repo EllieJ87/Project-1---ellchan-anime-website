@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Ellchan_Anime</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="styles-title.css"/>
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Covered By Your Grace' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--This is the link to Bootstrap, which will make up the basis of the styles for my site-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <!--This is the link to font awesome, which I will use for the icons in my site-->
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <!--This is the link to google fonts used in the site-->
+ <link href='https://fonts.googleapis.com/css?family=Covered By Your Grace' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+ <!--This is my custom stylesheet, which I will use to apply further style to my elements for the index page only-->
+<link rel="stylesheet" type="text/css" href="styles-title.css"/>
 </head>
+
 <body>
 
-  <body>
+  <div class="container p-5">
+    <div class="row">
+      <div class="col">
+        <!-- Main Opening Image for the index page only -->
+        <img class="mx-auto d-block img-fluid" src="images/levi-1.jpg" alt="home" width="849" height="739">
 
-    <div class="container p-5">
-      <div class="row">
-        <div class="col col">
-          <img class="mx-auto d-block img-fluid" src="images/levi-1.jpg" alt="home" width="849" height="739">
+        <!-- Main Ttile text -->
+        <div class="top-left">
+          <h1>Ellchan_Anime</h1>
+        </div>
 
-          <div class="top-left">
-            <h1>Ellchan_Anime</h1>
-          </div>
+        <div>
+          <!-- Enter Button for the index page only-->
+          <button class="enter" onclick="location.href='home.html'" type="button">Enter</button>
+        </div>
 
-          <div>
-            <button class="enter" onclick="location.href='home.html'" type="button">Enter</button>
-          </div>
+      </div><!--col -->
+    </div><!-- row -->
+  </div><!-- container p-5 -->
 
-        </div><!--col col-lg-12 -->
-      </div><!-- row -->
-    </div><!-- container p-5 -->
+<!--JavaScript, jQuery and Popper.js links from Bootstrap-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>

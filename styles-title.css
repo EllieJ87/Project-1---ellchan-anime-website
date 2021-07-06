@@ -1,3 +1,5 @@
+/* Prefixed by https://autoprefixer.github.io */
+
 body {
   margin: 0;
 }
@@ -66,7 +68,7 @@ button {
     cursor: pointer;
   }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
 
   h1 {
     font-size: 30px;
@@ -76,4 +78,31 @@ button {
     position: absolute;
     top: 0;
   }
+}
+
+@media screen and (max-width: 480px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 0;
+  }
+
+  button {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+
+  }
+
+  .enter {
+    font-size: 15px;
+    width: 80px;
+    height: 35px;
+
+  }
+
 }

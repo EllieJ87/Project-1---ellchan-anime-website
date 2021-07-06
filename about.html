@@ -1,124 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Ellchan_Anime</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Covered By Your Grace' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-  <link rel="stylesheet" type="text/css" href="styles-master.css"/>
+  <!--This is the link to Bootstrap, which will make up the basis of the styles for my site-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <!--This is the link to font awesome, which I will use for the icons in my site-->
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <!--This is the link to google fonts used in the site-->
+ <link href='https://fonts.googleapis.com/css?family=Covered By Your Grace' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+ <!--This is my custom stylesheet, which I will use to apply further style to my elements-->
+ <link rel="stylesheet" type="text/css" href="styles-master.css"/>
 </head>
+
 <body>
 
-  <div class="container p-2">
+  <div class="row">
+    <!-- Banner Image will be the same across all pages-->
+    <img class="mx-auto d-block img-fluid banner" src="images/banner.jpg" alt="banner" width="1056" height="276">
+  </div>
 
-    <header>
+  <header class="container">
+    <!-- Title will be the same across all pages -->
+    <h1 class="text">Ellchan_Anime</h1>
 
-      <div class="row">
+    <!-- Navbar will be the same across all pages -->
+    <!-- used sample navbar code from bootstrap and tailored it to my requirements-->
+    <nav class="navbar navbar-expand-md">
+      <!-- Navbar toggler will be visible on sm viewport & will be the same across all pages -->
+      <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
 
-      <!-- Banner Image -->
-      <img class="mx-auto d-block img-fluid banner" src="images/banner.jpg" alt="banner" width="1056" height="276">
+      <!-- Navbar Collapse & Dropdown will be the same across all pages -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <!-- Navbar Dropdown will be the same across all pages -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#" role="button">Portfolio<i class="fa fa-chevron-down toggle" aria-hidden="true"></i></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="anime.html">Anime</a>
+              <a class="dropdown-item" href="games.html">Games</a>
+              <a class="dropdown-item" href="pokemon.html">Pokemon</a>
+              <a class="dropdown-item" href="animals.html">Animals</a>
+              <a class="dropdown-item" href="other.html">Other</a>
+              <a class="dropdown-item" href="#">Website (Coming Soon)</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+      </ul>
     </div>
-    </header>
+  </nav>
+</header>
 
-      <!-- Title -->
-      <div>
-      <div class="text"><h1>Ellchan_Anime</h1></div>
+<!-- Main page content will change on each page content -->
+<div class="container p-2">
+  <div class="row">
+    <div class="col">
+      <!-- About me Information -->
+      <h2>About Me</h2>
 
+      <p><strong>Konnichiwa! My name is Ellie!</strong></p>
 
-      <div class="row">
-      <div class="col col-2 nav-display">
-        <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-md">
-          <!-- put in the div -->
-          <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-          </button>
+      <p>So, a little bit about me (on more of a personal note) I am a 33-year-old (female in case you were wondering), currently living in London, originally from Cambridgeshire.</p>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
+      <p>I begin to watch Anime back when I was 15 years old, my first one if I can remember right was Gravitation (not to sure why that one!) which moved onto Gundam Wing, Fullmetal Alchemist and Death Note to name a few starters! From this my interest for Japanese music took off listening to what was known at the time Visual Kei ; the strong leaders being Dir en Grey, D’espairsRay and Kagerou (which I end up seeing in Germany when they toured!)</p>
 
-              <!-- DropDown -->
-              <li class="nav-item dropdown dropright">
-                <a class="nav-link" data-toggle="dropdown" href="#" role="button">Portfolio<i class="fa fa-chevron-right toggle" aria-hidden="true"></i></a>
+      <p>My Love for Anime re-surfaced back into my life back in 2020 (during the Covid lockdown times!) through the spider web of faithful YouTube videos and stumbling on Anime opening themes, I thought to myself ‘Huh’ why did I stop watching this? And low and behold a year later I am now making a good dent into my never-ending Anime list! This has also brought on some amazing Japanese artists as well.  My Work is mainly a celebration of the Anime I have enjoyed over the years and hope I have captured them in a due and worthy light!</p>
 
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="anime.html">Anime</a>
-                  <a class="dropdown-item" href="games.html">Games</a>
-                  <a class="dropdown-item" href="pokemon.html">Pokemon</a>
-                  <a class="dropdown-item" href="animals.html">Animals</a>
-                  <a class="dropdown-item" href="other.html">Other</a>
-                  <a class="dropdown-item" href="#">Website (Coming soon)</a>
-                </div>
-              </li>
+      <p>Drawing also helps with my creative side, as I love to also knit and crochet as well, but I want to express my newfound enjoyment into drawing!</p>
 
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <p>If you would like to know more then feel free to write to me, or if you have any Anime suggestions I would love to hear from you too! :D</p>
 
+      <p><strong><em>Ja na!
+        <br>
+        Ellie</em></strong></p>
 
-      <div class="col col-10">
-        <div class="col-xl main">
-          <h2>About Me</h2>
+    </div><!-- col -->
+  </div><!-- row -->
+</div><!-- container p-2 -->
 
-          <p><strong>Konnichiwa! My name is Ellie!</strong></p>
+<div class="container p-2">
+  <div class="row" id="links">
+    <div class="col-12 col-lg-6 d-flex" id="socialMediaLinks">
+      <!-- Social Media Links will be the same across all pages-->
+      <div class="p-2"><a href="https://www.linkedin.com/in/ellie-judge-45b00689/" class="fa fa-linkedin-square" aria-hidden="true" target="_blank"></a></div>
 
-          <p>So, a little bit about me (on more of a personal note) I am a 33-year-old (female in case you were wondering), currently living in London, originally from Cambridgeshire.</p>
+      <div class="p-2"><a href="https://www.instagram.com/_ellchan_anime/" class="fa fa-instagram" aria-hidden="true" target="_blank"></a></div>
 
-          <p>I begin to watch Anime back when I was 15 years old, my first one if I can remember right was Gravitation (not to sure why that one!) which moved onto Gundam Wing, Fullmetal Alchemist and Death Note to name a few starters! From this my interest for Japanese music took off listening to what was known at the time Visual Kei ; the strong leaders being Dir en Grey, D’espairsRay and Kagerou (which I end up seeing in Germany when they toured!)</p>
-
-          <p>My Love for Anime re-surfaced back into my life back in 2020 (during the Covid lockdown times!) through the spider web of faithful YouTube videos and stumbling on Anime opening themes, I thought to myself ‘Huh’ why did I stop watching this? And low and behold a year later I am now making a good dent into my never-ending Anime list! This has also brought on some amazing Japanese artists as well.  My Work is mainly a celebration of the Anime I have enjoyed over the years and hope I have captured them in a due and worthy light!</p>
-
-          <p>Drawing also helps with my creative side, as I love to also knit and crochet as well, but I want to express my newfound enjoyment into drawing!</p>
-
-          <p>If you would like to know more then feel free to write to me, or if you have any Anime suggestions I would love to hear from you too! :D</p>
-
-          <p>Ja na!</p>
-
-          <p>Ellie</p>
-
-        </div><!--col-xl-10 -->
-
-      </div><!-- col offset-lg-2 col-lg-10 -->
-    </div><!-- row -->
-
-  </div><!-- Closed container div -->
-
-  <div class="container p-2">
-    <div class="row" id="links">
-      <div class="col-12 col-lg-6 d-flex" id="socialMediaLinks">
-
-        <div class="p-2"><a href="https://www.linkedin.com/in/ellie-judge-45b00689/" class="fa fa-linkedin-square" aria-hidden="true" target="_blank"></a></div>
-
-        <div class="p-2"><a href="https://www.instagram.com/_ellchan_anime/" class="fa fa-instagram" aria-hidden="true" target="_blank"></a></div>
-
-        <div class="p-2"><a id="envelope"><!-- set up email link thing -->
-          <a href="mailto:ellie_judge@hotmail.co.uk?&subject=Request for information &body=Welcome!, What would you like to chat about?" class="fa fa-envelope" aria-hidden="true"></a></div>
+      <div class="p-2"><a id="envelope"><!-- set up email link -->
+        <a href="mailto:ellie_judge@hotmail.co.uk?&subject=Request for information &body=Welcome!, What would you like to chat about?" class="fa fa-envelope" aria-hidden="true"></a></div>
 
         <div class="p-2"><a href="https://twitter.com/Els_Luna87" class="fa fa-twitter" aria-hidden="true" target="_blank"></a></div>
 
         <div class="p-2"><a href="https://www.facebook.com/Lobo.Luna.87/" class="fa fa-facebook" aria-hidden="true" target="_blank"></a></div>
-        </div>
+      </div><!-- col-12 col-lg-6 d-flex -->
 
+      <!-- Footer Copyright will be the same across all pages-->
       <div class="col-12 col-lg-6" id="footer">All work copyright @2021   | Ellie Judge  | all rights reserved</div>
-    </div>
-  </div><!-- Closed container p-2 div -->
+    </div><!-- row closing tag -->
+</div><!-- container closing tag -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--JavaScript, jQuery and Popper.js links from Bootstrap-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
