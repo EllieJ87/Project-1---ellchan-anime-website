@@ -50,6 +50,7 @@ Table of Contents
 My website is for current and potential anime, gaming or drawing fans, who are looking to gain more content and a full library of my work.  My website provides a full overhaul of varied works over the past years, along with links to my social media sites where they can follow me directly.
 
 ## User Stories
+
 As a new / first time user / potential customer I would like users to learn more about the work I have to offer, as well as easily understand the goals that this site is offering.
 
 * As a new / first time user / potential customer all content will be easy to navigate through in order that the user finds what they are looking for quickly, this will provide the user with a great friendly user experience and transform them into a returning and frequent user of the site.
@@ -175,7 +176,7 @@ This section is a brief highlight of features that this site contains, why they 
 * This website is responsive on all browsers and devices regardless of viewport size
 * Elements are interactive to engage users to visit and interact with and engage with the site as intended
 
-## Existing features
+## Existing Features
 
 **index.html**
 
@@ -192,6 +193,7 @@ This section is a brief highlight of features that this site contains, why they 
 * Social media links - Each link opens a new page with the relevant social media page to my personal social media site, (LinkedIn, Instagram, Twitter, and Facebook).  These links make it easy for users to access my social media profiles from one place. The social media profiles load in a new tab, which allows users to then return to the site. They are displayed to the left in the footer on large to extra-large screens, this is then stacked on medium to extra small screens and is centred
 
 **Portfolio Pages**
+
 *(anime.html / games.html / pokemon.html / animals.html / other.html)*
 
 * Modal with image, title, and brief description of the image - The modal is triggered by clicking the image, this then opens the Modal with the image, title, and brief description of the drawing in its own container
@@ -202,7 +204,7 @@ This section is a brief highlight of features that this site contains, why they 
 
 * Form with submit button - Allows users to contact me for any further information or collaborations they wish to work with me on.  It also gives the user the opportunity to contact me if they like anything they see to have for themselves or any feedback they wish to give regarding any content on the site.
 
-## Future features
+## Future Features
 
 Once I've learnt JavaScript and back-end web development, I will add further functionality to the existing features on my website.
 
@@ -230,6 +232,10 @@ This project was built using the following languages and technologies:
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript): The project uses JavaScript from Bootstrap which is required to add functionality to some of Bootstrap's components.
 * Google Chrome Dev Tools: For testing purposes.
 * [Google Fonts](https://fonts.google.com/): Google fonts was used to import ‘Covered By Your Grace’ font and ‘Lato’ into the HTML which is used on all pages throughout the project.
+* [W3C HTML-Validator](https://validator.w3.org/): Used to find mistakes in my HTML code and try to fix these.
+* [Autoprefixer](https://autoprefixer.github.io/): Used to find mistakes in my CSS code and try to fix these.
+* [Formspree](https://formspree.io/forms): Used for the backend contact form to ensure this linked from my site to my email.
+* [Compressjpeg](https://compressjpeg.com/): Used to compress all my images so loading pages would not be an issue.
 * [Font Awesome](https://fontawesome.com/): Font Awesome icons were used on all pages throughout the website. The majority of these were in the footer for the Social Media icons. I have added other Font Awesome icons to button.
 
 Here is a list of Icons that I have used within my site for the different pages/sections. These have all been styled using CSS. I have called the style tags the following:
@@ -240,11 +246,6 @@ Here is a list of Icons that I have used within my site for the different pages/
 * [Email Icon](https://fontawesome.com/v4.7/icon/envelope)
 * [Twitter](https://fontawesome.com/v4.7/icon/twitter)
 * [Facebook](https://fontawesome.com/v4.7/icon/facebook)
-
-* [W3C HTML-Validator](https://validator.w3.org/): Used to find mistakes in my HTML code and try to fix these.
-* [Autoprefixer](https://autoprefixer.github.io/): Used to find mistakes in my CSS code and try to fix these.
-* [Formspree](https://formspree.io/forms): Used for the backend contact form to ensure this linked from my site to my email.
-* [Compressjpeg](https://compressjpeg.com/): Used to compress all my images so loading pages would not be an issue.
 
 ## Tools
 
@@ -410,7 +411,7 @@ The last small issue that I found tricky to resolve in the time I had left for t
 2. Placing in a new div container – had no effect
 3. Went back to Bootstrap and re-using the code they have for drop down navigation, this worked however when changing the colour the toggle would not change to my colour scheme but would change to a pre-determined colour (e.g Yellow) otherwise it took the colour of what seem to be black.
 
-*Resolved*
+*Un-resolved*
 
 This element is still _**not fixed**_ and is an error I will re-look into this element when I re-visit this project / site when I want to expand and make this a business site adding all my future features elements to it.
 
@@ -429,7 +430,7 @@ The hosting platform that I've used for my project is GitHub Pages. To deploy my
 
 **Repository Link**
 
-[ellchan_anime](https://elliej87.github.io/ellchan-anime/)
+[ellchan_anime](https://github.com/EllieJ87/ellchan-anime)
 
 **Running Code Locally**
 
