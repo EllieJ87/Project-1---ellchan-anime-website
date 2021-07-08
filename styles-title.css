@@ -13,7 +13,7 @@ img {
     position: center;
     size: contain;
     position: relative;
-    }
+  }
 
 /* Text positioning */
 .top-left {
@@ -29,7 +29,7 @@ h1 {
   font-size: 45px;
   color: #171a1a;
   text-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
-  }
+}
 
 /* Button positioning */
 button {
@@ -37,37 +37,51 @@ button {
   top: 90%;
   left: 85%;
   margin: -90% 0 0 -85%;
-  }
+}
 
 /* Button text styling */
-  .enter {
-    width: 130px;
-    height: 60px;
-    text-decoration: none;
-    background-color: white;
-    border-radius: 15px;
-    border: none;
-    color: #171a1a;
-    text-shadow: 1px 1px 3px rgba(18,249,180, 0.95);
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    font-family: lato;
-    font-style: italic;
-    font-weight: bold;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    -o-transition-duration: 0.4s;
-       transition-duration: 0.4s;
-  }
+.enter {
+  width: 130px;
+  height: 60px;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+  color: #171a1a;
+  text-shadow: 1px 1px 3px rgba(18,249,180, 0.95);
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  font-family: lato;
+  font-style: italic;
+  font-weight: bold;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
 
 /* button on hover */
-  .enter:hover {
-    -webkit-box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
-            box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
-    cursor: pointer;
-  }
+.enter:hover {
+  -webkit-box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+  box-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
+  cursor: pointer;
+}
 
+/* footer styling and position */
+#footer {
+  background-color: white;
+  font-family: lato;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(23,26,26,0.75);
+  text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
+}
+
+/* Media queries */
 @media screen and (max-width: 768px) {
 
   h1 {
@@ -95,14 +109,15 @@ button {
     position: absolute;
     top: 90%;
     left: 80%;
-
   }
 
   .enter {
     font-size: 15px;
     width: 80px;
     height: 35px;
-
   }
 
+  #footer {
+    font-size: 10px;
+  }
 }

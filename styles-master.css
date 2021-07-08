@@ -1,7 +1,13 @@
 /* Prefixed by https://autoprefixer.github.io */
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 0;
 }
 
 /* Image Banner */
@@ -10,8 +16,10 @@ body {
   top: 0;
   right: 0;
   left: 0;
+  padding: 0;
   z-index: 1;
   background-color: white;
+  height: auto;
 }
 
 /* Title & Navbar positioning */
@@ -26,9 +34,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;
   padding: 10px;
   background-color: white;
   z-index: 2;
@@ -42,22 +50,20 @@ header {
   color: #171a1a;
   text-shadow: 4px 4px 10px rgba(0,255,178, 0.6);
   padding: 0;
-  }
+}
 
 /* Main Nav Bar Details */
 nav.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  text-align: center;
+  -webkit-box-align: flex-end;
+      -ms-flex-align: flex-end;
+          align-items: flex-end;
+ -webkit-box-pack: flex-end;
+      -ms-flex-pack: flex-end;
+          justify-content: flex-end;
+  text-align: right;
 }
 
 /* Nav toggle button */
@@ -76,8 +82,8 @@ nav.navbar {
 /* Nav links styling */
 .nav-link {
   height: auto;
-  display: block;
-  padding: 8px 16px;
+  padding: 0;
+  margin: 0;
   font-family: lato;
   font-style: italic;
   font-size: 20px;
@@ -86,17 +92,20 @@ nav.navbar {
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  }
+}
+
+a.nav-link {
+  padding-bottom: 10px;
+}
 
 /* Navbar drop down menu */
 .dropdown-menu {
-  height: auto;
-  padding: 2px;
   font-family: lato;
   font-style: italic;
   font-size: 15px;
   color: rgba(23,26,26,0.75);
   text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
+  text-align: right;
 }
 
 /* nav text styling & shadow on hover */
@@ -105,24 +114,23 @@ ul.navbar-nav li a:hover:not(.active) {
   color: #f7f7f7;
   text-shadow: 1px 1px 3px rgba(23,26,26,0.95);
   border-radius: 20px;
-  padding: 10px 20px;
- }
+}
 
- .toggle {
+.toggle {
   color: rgba(23,26,26,0.75);
   text-shadow: 1px 1px 3px rgba(18,249,180,0.95);
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
   font-size: 15px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .toggle:hover:not(.active) {
   background-color: rgba(18,249,180,0.1);
   color: #f7f7f7;
   text-shadow: 1px 1px 3px rgba(23,26,26,0.95);
- }
+}
 
 /* Container Styling */
 
@@ -139,12 +147,11 @@ h2 {
 }
 
 /* Main Paragraph */
-
 p {
   font-family: lato;
   color: #171a1a;
+  width: 100%
 }
-
 
 /* H3 Styling details */
 .work-title {
@@ -169,7 +176,6 @@ p {
 }
 
 /* Lists Styling details */
-
 i {
   color: rgba(18,249,180,0.95);
   text-shadow: 1px 1px 3px rgba(23,26,26,0.75 );
@@ -229,7 +235,6 @@ i {
 }
 
 /* Modal Styling */
-
 .image {
   padding: 10px;
   transistion:  0.5s ease;
@@ -250,7 +255,6 @@ i {
 }
 
 /* Modal Light */
-
 .modal-light {
   font-family: lato;
   font-style: italic;
@@ -273,7 +277,6 @@ i {
 }
 
 /* Modal Dark */
-
 .modal-dark {
   font-family: lato;
   font-weight: bold;
@@ -354,5 +357,22 @@ i {
 
   #footer {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+  /*Social Media & Footer Display */
+  .modal-dialog {
+    width: 80%;
+    height: inherit;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .dropdown-menu {
+    font-size: 12px;
   }
 }
